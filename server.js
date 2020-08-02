@@ -7,13 +7,13 @@ var redditComments = require("./comments.json");
 redditComments.forEach(function(comment) {
   comment.sentiment = ml.classify(comment.body);
   if (comment.sentiment >= 5) {
-    comment.emoji = "😃";
+    comment.emoji = "😃!";
   } else if (comment.sentiment > 0) {
-    comment.emoji = "🙂";
+    comment.emoji = "🙂!";
   } else if (comment.sentiment == 0) {
-    comment.emoji = "😐";
+    comment.emoji = "😐!";
   } else {
-    comment.emoji = "😕";
+    comment.emoji = "😕!";
   }
 });
 
