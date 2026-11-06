@@ -9,7 +9,8 @@ Code that looks right can still render wrong. This skill lets you **look at the 
 
 ## Steps
 1. Start the app in the background on a free port, e.g. `PORT=3123 node server.js &`,
-   and wait until it responds (`curl -s localhost:3123 >/dev/null`).
+   and wait until it responds (`curl -s localhost:3123 >/dev/null`). For a static site with
+   no server, use `python3 -m http.server 3123 &`.
 2. Run the checker (it works from any directory):
    ```
    node .claude/skills/ui-check/scripts/check.js http://localhost:3123 /tmp/ui-check
