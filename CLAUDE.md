@@ -17,3 +17,9 @@ contract changes go back through the architect.
 ## Conventions
 - Node + Express (CommonJS), vanilla HTML/CSS/JS on the client, no build step.
 - Server reads `PORT` from the environment (default 3000).
+
+## Skills
+- `ui-check` (`.claude/skills/ui-check/`): phone and desktop screenshots plus automated
+  UI checks. Preloaded into frontend-builder, test-writer and reviewer.
+- `engineering:testing-strategy` and `engineering:code-review` come from the engineering
+  plugin. If that plugin isn't installed, the agents still work without them.
